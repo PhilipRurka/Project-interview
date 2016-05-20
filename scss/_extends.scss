@@ -1,0 +1,105 @@
+/***********************************************************
+                        	Mixin
+************************************************************/
+/*   3     #    */
+
+@mixin text($size, $color :null, $text-align :null, $weight :null, $letter-spacing :null, $line-height :null) {
+	font-size: $size;
+	line-height: $line-height;
+	font-weight: $weight;
+	color: $color;
+	text-align: $text-align;
+	letter-spacing: $letter-spacing;
+}
+
+@mixin h1_underline ($left) {
+	
+}
+
+@mixin background_image ($img, $width, $height, $top :null, $left :null, $content :null, $back_size :null, $z :null, $position :null) {
+	background-image: url("../img/#{$img}");
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    content: $content;
+    background-size: $back_size;
+    z-index: $z;
+    position: $position;
+}
+
+
+/***********************************************************
+                      Place Holders
+************************************************************/
+/*   3     #    */
+
+
+%content_border {
+    border: 1px solid white;
+    box-shadow: 0px 3px 10px #DEDEDE;
+}
+
+%underline {
+	content: '';
+	position: absolute;
+	width: 26px;
+	border-bottom: 1px solid black;
+	left: 0;
+	bottom: -6px;
+}
+
+
+/***********************************************************
+                      	  Colors
+************************************************************/
+/*   3     #    */
+
+
+$white   						: #fff;
+$black							: #000;
+$gray							: #7E7E7E;
+$wisteria						: #8E6BAF;
+$alabaster						: #FAFAFA;
+
+
+/***********************************
+           Colors-Function
+************************************/
+/*   3     #    */
+
+
+$color_right_border				: $black;
+$color_nav_a					: $gray;
+$color_span 					: $wisteria;
+$color_h2						: $white;
+$color_container				: $alabaster;
+$color_content_top_left			: $white;
+$color_p						: $gray;
+$color_white_back				: $white;
+$color_underline				: $white;
+$color_save						: $white;
+$color_save_background			: $black;
+$color_drop_down				: $black;
+$color_b_p						: $gray;
+$color_b_background				: $white;
+$color_add_comment				: $black;
+$color_unchecked				: $gray;
+$color_checked_a				: $black;
+$color_textarea_border			: $gray;
+$color_post						: $wisteria;
+$color_textarea_focus			: $wisteria;
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
