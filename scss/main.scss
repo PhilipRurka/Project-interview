@@ -682,7 +682,7 @@ body {
 
 // Hack to solve the outline issue.
 #outline {
-	content: 'A';
+	content: '';
 	position: absolute;
 
 	&:focus {
